@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Major-Project</title>
+    <meta
+      name="description"
+      content="Major Project , Teachnook Web development internship"
+    />
+    <meta property="og:type" content="Website" />
+    <meta property="og:title" content="Major Project" />
+    <meta
+      property="og:description"
+      content="Major Project , Teachnook Web development internship"
+    />
+    <meta
+      name="keywords"
+      content="Major Project, Teachnook, Web development, API, Weather Forecast, Weather, Weather app"
+    />
+  </head>
+
+  <body>
+    <main>
+      <header id="header">
+        <nav class="navbar">
+          <button class="location-button" onclick="getlocation()">
+            <span class="material-symbols-outlined"> location_on </span>
+          </button>
+          <div class="search">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search your city..."
+              id="search-input"
+            />
+            <button class="search-button">
+              <span class="material-symbols-outlined"> search </span>
+            </button>
+          </div>
+          <div class="date-time">
+            <p class="date" id="date">30/7/22</p>
+            <p class="time" id="time">24:00</p>
+          </div>
+        </nav>
+      </header>
+
+      <section class="main-container">
+        <div class="card">
+          <div class="loc-temp">
+            <h1 class="city" id="city">Delhi</h1>
+            <h1>:</h1>
+            <h1 class="temp" id="temp"></h1>
+          </div>
+          <div class="icon-desc">
+            <img
+              src="https://openweathermap.org/img/wn/04n.png"
+              alt=""
+              class="icon"
+              id="icon"
+            />
+            <div class="description" id="description">
+              <h2></h2>
+            </div>
+          </div>
+          <div class="humdity" id="humidity"></div>
+          <div clas="wind-speed" id="wind-speed"></div>
+          <div id="wind-direction" id="wind-direction"></div>
+        </div>
+        <div class="forecast-container">
+          <div class="card-forecast">
+            <h3 class="date-1" id="date-1">Day-2</h3>
+            <div class="icon-forecast">
+              <img
+                src="https://openweathermap.org/img/wn/04n.png"
+                alt=""
+                class="icon-forecast-1"
+                id="icon-forecast-1"
+              />
+              <div class="description-1" id="description-1">
+                <h2></h2>
+              </div>
+            </div>
+            <h1 class="temp-forecast-1" id="temp-forecast-1"></h1>
+          </div>
+          <div class="card-forecast">
+            <h3 class="date-2" id="date-2">Day-3</h3>
+            <div class="icon-forecast">
+              <img
+                src="https://openweathermap.org/img/wn/04n.png"
+                alt=""
+                class="icon-forecast-2"
+                id="icon-forecast-2"
+              />
+              <div class="description-2" id="description-2">
+                <h2></h2>
+              </div>
+            </div>
+            <h1 class="temp-forecast-2" id="temp-forecast-2"></h1>
+          </div>
+          <div class="card-forecast">
+            <h3 class="date-3" id="date-3">Day-4</h3>
+            <div class="icon-forecast">
+              <img
+                src="https://openweathermap.org/img/wn/04n.png"
+                alt=""
+                class="icon-forecast-3"
+                id="icon-forecast-3"
+              />
+              <div class="description-3" id="description-3">
+                <h2></h2>
+              </div>
+            </div>
+            <h1 class="temp-forecast-3" id="temp-forecast-3"></h1>
+          </div>
+          <div class="card-forecast">
+            <h3 class="date-4" id="date-4">Day-5</h3>
+            <div class="icon-forecast">
+              <img
+                src="https://openweathermap.org/img/wn/04n.png"
+                alt=""
+                class="icon-forecast-4"
+                id="icon-forecast-4"
+              />
+              <div class="description-4" id="description-4">
+                <h2></h2>
+              </div>
+            </div>
+            <h1 class="temp-forecast-4" id="temp-forecast-4"></h1>
+          </div>
+        </div>
+        <div class="chart-temp" id="chart-temp">
+          <h1>Temperature for 5 days</h1>
+          <canvas id="tempChart" style="width: 100%; max-width: 600px"></canvas>
+        </div>
+        <div class="chart-humidity" id="chart-humidity">
+          <h1>Humidity for 5 days</h1>
+          <canvas
+            id="humidityChart"
+            style="width: 100%; max-width: 600px"
+          ></canvas>
+        </div>
+      </section>
+
+      <footer>
+        <nav class="navbar">
+          <button class="location-button" onclick="getlocation()">
+            <span class="material-symbols-outlined"> location_on </span>
+          </button>
+          <div class="search">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search your city..."
+              id="search-input"
+            />
+            <button class="search-button">
+              <span class="material-symbols-outlined"> search </span>
+            </button>
+          </div>
+        </nav>
+      </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

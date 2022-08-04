@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #353b3c;
+  background-color: #efefef;
+  letter-spacing: 0.5px;
+}
+
+nav.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+header,
+footer {
+  background-color: #d9d9d9;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input.search-input {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 8px;
+  background: #7c7c7c2b;
+  color: #353b3c;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+.search button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 40px;
+  width: 40px;
+  outline: none;
+  background: #949494;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.location-button {
+  background: 0;
+  border: none;
+}
+
+.location-button:hover {
+  color: #7c7c7c;
+}
+
+.search button:hover {
+  background: #7c7c7c4b;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #d9d9d9d0;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  padding: 2em;
+  margin: 1em;
+}
+
+.forecast-container {
+  display: flex;
+  flex-direction: row;
+  margin: 7em 1em;
+  background-color: #d9d9d9d0;
+  width: 100%;
+  max-width: 1050px;
+  border-radius: 20px;
+  padding: 2em;
+}
+
+.card-forecast {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  background-color: #b2b2b2;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 8px;
+  height: 190px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+.loc-temp {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: space-around;
+}
+.description {
+  text-transform: capitalize;
+  font-size: 150%;
+}
+.icon-desc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-forecast {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  text-transform: capitalize;
+}
+
+section.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+.chart-temp,
+.chart-humidity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.chart-temp h1,
+.chart-humidity h1 {
+  margin-bottom: 40px;
+}
